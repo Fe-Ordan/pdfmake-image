@@ -15,10 +15,14 @@ export class AppComponent {
     let docDefinition = {
       content: [
         {
+          text: 'PDF Generated with Image from external URL',
+          fontSize : 20
+        },
+        {
           image: await this.getBase64ImageFromURL(
             "https://images.pexels.com/photos/209640/pexels-photo-209640.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300"
           )
-        }
+        }        
       ]
     };
 
