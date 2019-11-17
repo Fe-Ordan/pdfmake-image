@@ -22,7 +22,7 @@ export class AppComponent {
       ]
     };
 
-    pdfMake.createPdf(docDefinition).download();
+    pdfMake.createPdf(docDefinition).open();
   }
 
   getBase64ImageFromURL(url) {
